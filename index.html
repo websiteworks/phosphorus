@@ -200,7 +200,7 @@
   }
 
   function updatePackageLink() {
-    packageLink.href = P.player.projectId ? '/app.htm' + 'l?id=' + P.player.projectId + '&turbo=' + packageTurbo.checked + '&full-screen=' + packageFullScreen.checked : 'about:blank';
+    packageLink.href = P.player.projectId ? '/app.html?id=' + P.player.projectId + '&turbo=' + packageTurbo.checked + '&full-screen=' + packageFullScreen.checked : '_parent';
   }
 
   packageTurbo.addEventListener('change', updatePackageLink);
